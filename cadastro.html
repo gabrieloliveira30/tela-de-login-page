@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+
+    <!-- Ícones (opcional) -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        /* Reset básico de todos os elementos */
+        * {
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove padding padrão */
+            box-sizing: border-box; /* Inclui borda e padding na largura/altura */
+            font-family: "Poppins", sans-serif; /* Fonte padrão da página */
+        }
+
+        /* Estilo do body */
+        body {
+            display: flex; /* Flexbox para centralizar o container */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Altura mínima igual à tela */
+            background: url(img/galaxia.jpg) no-repeat center center/cover; /* Fundo com imagem */
+            color: white; /* Cor do texto padrão */
+            text-align: center; /* Centraliza textos por padrão */
+        }
+
+        /* Container principal */
+        .container {
+            width: 420px; /* Mesma largura da tela de login */
+            background-color: transparent; /* Fundo transparente */
+            border: 2px solid rgba(255, 255, 255, 0.2); /* Borda semi-transparente */
+            border-radius: 10px; /* Cantos arredondados */
+            padding: 30px 40px; /* Espaçamento interno */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra suave */
+            backdrop-filter: blur(30px); /* Efeito glassmorphism */
+            text-align: center; /* Centraliza textos */
+        }
+
+        /* Título da página */
+        h1 {
+            margin-bottom: 20px; /* Espaço abaixo do título */
+        }
+
+        /* Bloco que envolve cada input */
+        .input-box {
+            position: relative; /* Para posicionamento de ícones futuramente */
+            width: 100%; /* Ocupa toda a largura do container */
+            margin: 20px 0; /* Espaço acima e abaixo de cada input */
+        }
+
+        /* Estilo dos inputs */
+        .input-box input {
+            width: 100%; /* Largura total do bloco */
+            padding: 15px 20px; /* Espaço interno do input */
+            border-radius: 40px; /* Bordas arredondadas */
+            border: 1px solid rgba(255,255,255,0.2); /* Borda leve */
+            background-color: transparent; /* Fundo transparente */
+            color: white; /* Texto branco */
+            font-size: 16px; /* Tamanho da fonte */
+            outline: none; /* Remove contorno ao focar */
+        }
+
+        /* Botão de cadastrar */
+        button {
+            width: 100%; /* Ocupa toda a largura do container */
+            padding: 15px; /* Espaçamento interno do botão */
+            border-radius: 40px; /* Bordas arredondadas */
+            border: none; /* Remove borda padrão */
+            background-color: #fff; /* Fundo branco */
+            color: #333; /* Cor do texto */
+            font-weight: 600; /* Negrito leve */
+            cursor: pointer; /* Cursor de pointer ao passar mouse */
+            margin-top: 10px; /* Espaço acima do botão */
+            transition: 0.3s ease; /* Animação suave para hover */
+        }
+
+        /* Hover do botão */
+        button:hover {
+            background-color: transparent; /* Fundo transparente */
+            color: white; /* Texto branco */
+            border: 2px solid rgba(255,255,255,0.2); /* Borda visível */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container principal -->
+    <main class="container">
+
+        <!-- Título da página -->
+        <h1>Cadastre-se</h1>
+
+        <!-- Campo de e-mail -->
+        <div class="input-box">
+            <input type="email" placeholder="Digite seu e-mail" required>
+            <!-- type="email" valida que o usuário digitou um email válido -->
+            <!-- required força preenchimento antes de enviar -->
+        </div>
+
+        <!-- Campo de senha -->
+        <div class="input-box">
+            <input type="password" placeholder="Escolha uma senha" required>
+            <!-- type="password" esconde os caracteres digitados -->
+        </div>
+
+        <!-- Botão de cadastro -->
+        <button>Cadastrar</button>
+        <!-- Ainda não envia dados, apenas demonstra a interface -->
+    </main>
+</body>
+</html>

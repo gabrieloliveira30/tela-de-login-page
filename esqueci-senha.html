@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+
+    <!-- Boxicons (opcional, caso queira ícones dentro dos inputs) -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+        /* Reset básico de todos os elementos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif; /* Fonte padrão */
+        }
+
+        /* Estilo do body */
+        body {
+            display: flex; /* Flex para centralizar container */
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            min-height: 100vh; /* Altura mínima = altura da tela */
+            background: url(img/galaxia.jpg) no-repeat center center/cover; /* Fundo idêntico */
+            color: white; /* Cor do texto padrão */
+            text-align: center;
+        }
+
+        /* Container principal */
+        .container {
+            width: 420px; /* Mesma largura do login */
+            background-color: transparent; /* Fundo transparente */
+            border: 2px solid rgba(255,255,255,0.2); /* Borda leve */
+            border-radius: 10px; /* Cantos arredondados */
+            padding: 30px 40px; /* Espaçamento interno */
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Sombra suave */
+            backdrop-filter: blur(30px); /* Efeito glassmorphism */
+            text-align: center; /* Centraliza textos */
+        }
+
+        /* Título da página */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Bloco que envolve cada input */
+        .input-box {
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        /* Estilo dos inputs */
+        .input-box input {
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 40px; /* Bordas arredondadas */
+            border: 1px solid rgba(255,255,255,0.2); /* Borda leve */
+            background-color: transparent; /* Fundo transparente */
+            color: white; /* Texto branco */
+            font-size: 16px;
+            outline: none; /* Remove contorno ao focar */
+        }
+
+        /* Botão de enviar */
+        button {
+            width: 100%;
+            padding: 15px;
+            border-radius: 40px;
+            border: none;
+            background-color: #fff;
+            color: #333;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s ease;
+        }
+
+        /* Hover do botão */
+        button:hover {
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Container principal -->
+    <main class="container">
+        <!-- Título da página -->
+        <h1>Recuperar Senha</h1>
+
+        <!-- Campo para digitar e-mail -->
+        <div class="input-box">
+            <input type="email" placeholder="Digite seu e-mail" required>
+            <!-- type="email" valida formato de e-mail -->
+        </div>
+
+        <!-- Botão de enviar -->
+        <button>Enviar</button>
+        <!-- Ainda não envia de fato, apenas demonstra visual -->
+    </main>
+</body>
+</html>
